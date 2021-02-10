@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="sampleFlow" doc:id="86ca681c-3c43-415a-93d9-6c5ec8e084b0" >
 		<http:listener doc:name="Listener" doc:id="dbbfd40b-f0b4-4cbe-8845-3f68b3d7a708" config-ref="HTTP_Listener_config" path="/path"/>
 		<set-payload value="WELCOME TO HYDERABAD" doc:name="Set Payload" doc:id="5ef5f96d-4230-4f48-9272-01321df54ec5" />
+		<logger level="INFO" doc:name="Logger" doc:id="1ab2d88a-2ab9-40a8-87b0-ea4715722399" message="END OF THE FLOW.........................   #[payload]"/>
 	</flow>
 </mule>
